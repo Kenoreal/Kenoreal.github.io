@@ -729,6 +729,35 @@ html[lang="en"] .home-section-head h2 .en { display: none; }
 }
 
 /* ==========================================================================
+   英文版排版优化（html[lang="en"] 由 i18n 模块设置）
+   拉丁文字排印：略小字号、更紧行高、衬线西文标题、取消首行缩进
+   ========================================================================== */
+html[lang="en"] body { font-size: 15.5px; line-height: 1.75; }
+html[lang="en"] h1, html[lang="en"] h2, html[lang="en"] h3, html[lang="en"] h4,
+html[lang="en"] .hero-feature-title, html[lang="en"] .brand-cn,
+html[lang="en"] .card h3, html[lang="en"] .duo-card h3, html[lang="en"] .article-row h3,
+html[lang="en"] .section-lead h2, html[lang="en"] .related-head, html[lang="en"] .list-header,
+html[lang="en"] .member h3, html[lang="en"] .feature-card h3, html[lang="en"] .genre-card h3,
+html[lang="en"] .faq summary, html[lang="en"] .step h3, html[lang="en"] .stat .num {
+  font-family: Georgia, "Times New Roman", "Noto Serif SC", serif;
+}
+html[lang="en"] .article-body { font-size: 16.5px; line-height: 1.85; }
+html[lang="en"] .article-body p { text-indent: 0; margin-bottom: 1.1em; }
+html[lang="en"] .article-body h2 { border-left-width: 3px; }
+html[lang="en"] .article-head h1 { letter-spacing: 0; line-height: 1.35; }
+html[lang="en"] .hero-feature-title, html[lang="en"] .section-band h1,
+html[lang="en"] .page-head h1, html[lang="en"] .home-section-head h2,
+html[lang="en"] .brand-cn, html[lang="en"] .footer-brand .brand-cn { letter-spacing: .01em; }
+html[lang="en"] .hero-deck, html[lang="en"] .lead-deck, html[lang="en"] .excerpt { line-height: 1.8; }
+html[lang="en"] .tag { letter-spacing: .05em; }
+html[lang="en"] .btn { letter-spacing: .04em; }
+html[lang="en"] .issue-banner .issue-desc { line-height: 1.8; }
+html[lang="en"] .latest-row .l-title { font-family: Georgia, "Times New Roman", serif; }
+html[lang="en"] .section-band .en-name { display: none; }  /* 英文模式下标题已是英文，避免重复 */
+html[lang="en"] .genre-card .g-en { display: none; }
+html[lang="en"] .meta { letter-spacing: .01em; }
+
+/* ==========================================================================
    动效 & 响应式
    ========================================================================== */
 /* 滚动显现：仅在 JS 可用时隐藏元素（html.js 由 main.js 添加） */
