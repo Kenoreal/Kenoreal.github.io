@@ -1,5 +1,5 @@
 /* ============================================================
-   《青年政治论坛》全站共享脚本
+   《青年政治评论》全站共享脚本
    功能：注入顶部导航与页脚 / 移动端菜单 / 滚动状态 /
          文章页阅读进度条 / 卡片滚动显现 / 订阅表单（演示）
    说明：公共页眉页脚集中在此维护，改一处即全站生效。
@@ -40,9 +40,9 @@
     +   '</span>'
     + '</div></div>'
     + '<header class="site-header"><div class="container header-in">'
-    +   '<a class="brand" href="' + ROOT + 'index.html" aria-label="青年政治论坛 首页">'
+    +   '<a class="brand" href="' + ROOT + 'index.html" aria-label="青年政治评论 首页">'
     +     sealSvg(42)
-    +     '<span class="brand-word"><span class="brand-cn">青年政治论坛</span><br>'
+    +     '<span class="brand-word"><span class="brand-cn">青年政治评论</span><br>'
     +     '<span class="brand-en">Youth Political Review</span></span>'
     +   '</a>'
     +   '<div class="header-actions">'
@@ -68,7 +68,7 @@
     + '<div class="container footer-main">'
     +   '<div class="footer-brand">'
     +     '<a class="brand" href="' + ROOT + 'index.html">' + sealSvg(38)
-    +     '<span class="brand-word"><span class="brand-cn">青年政治论坛</span><br>'
+    +     '<span class="brand-word"><span class="brand-cn">青年政治评论</span><br>'
     +     '<span class="brand-en">Youth Political Review</span></span></a>'
     +     '<p>一份由青年学人主笔的全球事务评论期刊。设全球政治、全球经济、全球文明、全球治理四大板块，以青年之眼观察世界秩序的变迁。</p>'
     +   '</div>'
@@ -94,7 +94,7 @@
     +   '</div>'
     + '</div>'
     + '<div class="container"><div class="footer-bottom">'
-    +   '<span>© <span id="fYear">2026</span> 《青年政治论坛》Youth Political Review · 保留所有权利</span>'
+    +   '<span>© <span id="fYear">2026</span> 《青年政治评论》Youth Political Review · 保留所有权利</span>'
     +   '<span>编辑部来信：<a href="mailto:sduasgg2025920@163.com" style="color:#8fa0bd">sduasgg2025920@163.com</a> · 创刊号内容为示例文稿</span>'
     + '</div></div>'
     + '</footer>';
@@ -255,10 +255,10 @@
           ok.style.color = "#e08a96";
         });
       } else {
-        var subject = isEN ? "Newsletter subscription — Youth Political Review" : "订阅通讯 — 青年政治论坛";
+        var subject = isEN ? "Newsletter subscription — Youth Political Review" : "订阅通讯 — 青年政治评论";
         var mailBody = (isEN
           ? "Please add me to the Youth Political Review newsletter.\nEmail: "
-          : "请将我添加到《青年政治论坛》通讯订阅列表。\n邮箱：") + email;
+          : "请将我添加到《青年政治评论》通讯订阅列表。\n邮箱：") + email;
         location.href = "mailto:" + NEWS_TO + "?subject=" + encodeURIComponent(subject)
           + "&body=" + encodeURIComponent(mailBody);
         ok.textContent = isEN
@@ -283,7 +283,7 @@
 /* 英文正文数据（由编辑部编译） */
 window.YPRBODIES = {
 
-"editorial": "<p>This journal is born into an age routinely described as \"disordered.\" The old arguments no longer convince, and no new consensus has formed: tariffs are diplomatic language again, war has returned to the continental interior, and algorithms re-allocate attention and truth. Much commentary calls this a crisis — but a crisis, in its original sense, is a turning point: the moment when an old grammar fails and the vocabulary of the new one is not yet written.</p><p>We launch the Youth Political Review at such a moment not because we hold answers, but because we believe the list of questions must be redrawn by the generation that will live longest in the world it describes.</p><h2>I. Why a \"Forum\"</h2><p>We chose \"Forum\" deliberately, over \"Review.\" A review presumes an authoritative judge; a forum presumes an equal seat for every serious speaker. Here, IR scholars and anthropological fieldworkers, finance practitioners and museum curators, policy researchers and independent writers are invited into one circle — on a single condition: honest argument, solid evidence, and open positions.</p><p>The journal has four sections — global politics, global economy, global civilization, global governance — but we do not think the world divides neatly into four. Industrial policy is economics and politics at once; the climate bill is governance and justice; a museum vitrine sits at the border of civilization and national narrative. Sections are signposts, not walls.</p><h2>II. How We Read \"Disorder\"</h2><p>Disorder is not chaos, and it is not apocalypse. Describing the present as total collapse is rhetorical laziness; pretending all is well is a dereliction of perception. What is really underway is a long grammatical transition: the efficiency-first globalization is being rewritten by security and resilience; the one-way narrative of modernization is being corrected by plural civilizational experience; governance once monopolized by states is spilling over to cities, firms, communities and individuals.</p><blockquote><p>\"Order is not discovered; it is narrated and practiced.\"<span class=\"q-src\">— epigraph of the inaugural theme, \"Rewriting Order\"</span></p></blockquote><p>Hence our inaugural theme. The rise of the Global South is rewriting the distribution of power; the return of industrial policy is rewriting the grammar of markets; the restart of civilizational dialogue is rewriting the borders of identity; youth taking seats at negotiating tables is rewriting the temporality of politics. Four stories, one subtext: the world is being retold, and the storytellers are no longer few.</p><h2>III. Youth: Present, Not Pending</h2><p>The most common rhetorical move in public discussion is to treat the young as an object awaiting definition: \"How should youth face a broken world?\" We refuse the sentence. Young people are not the world's heirs — in time, we are its present shareholders. The climate bill is booked in our names; technical rules run through our professions; new political vocabularies are coined in our feeds.</p><p>Our position is therefore: presence. Presence as writers, as researchers, as citizens. The first act of presence is to look carefully — at data without ready conclusions, at opponents without positional reflexes, at ourselves without nostalgic filters. That is what we ask of every manuscript.</p><h2>IV. The Humility and the Ambition of a Journal</h2><p>We know a youth journal cannot change a tariff schedule or stop a war. But the texture of public life is never decided by high politics alone; it accumulates from the quality of classroom debate, the narrative choices of media, the habits of participation in one's community. Writing is itself a form of governance: turning vague resentment into clear questions, translating opposed positions into arguable propositions.</p><p>This is the first editorial, and the beginning of a long commitment. Submit, criticize, bring us what you see — a seat at this forum is always kept for a serious speaker.</p>",
+"editorial": "<p>This journal is born into an age routinely described as \"disordered.\" The old arguments no longer convince, and no new consensus has formed: tariffs are diplomatic language again, war has returned to the continental interior, and algorithms re-allocate attention and truth. Much commentary calls this a crisis — but a crisis, in its original sense, is a turning point: the moment when an old grammar fails and the vocabulary of the new one is not yet written.</p><p>We launch the Youth Political Review at such a moment not because we hold answers, but because we believe the list of questions must be redrawn by the generation that will live longest in the world it describes.</p><h2>I. Why \"Commentary\"</h2><p>We take the word \"Review\" just as seriously. Commentary is not the venting of feeling but a craft: to turn vague sentiment into clear questions, to translate opposed positions into arguable propositions, and to hand in a judgment one is willing to stand behind. Serious thought need not be obscure, and disagreement need not breed hostility — a good commentary is itself a public act. Here, IR scholars and anthropological fieldworkers, finance practitioners and museum curators, policy researchers and independent writers are invited to one shared podium — on a single condition: honest argument, solid evidence, and open positions.</p><p>The journal has four sections — global politics, global economy, global civilization, global governance — but we do not think the world divides neatly into four. Industrial policy is economics and politics at once; the climate bill is governance and justice; a museum vitrine sits at the border of civilization and national narrative. Sections are signposts, not walls.</p><h2>II. How We Read \"Disorder\"</h2><p>Disorder is not chaos, and it is not apocalypse. Describing the present as total collapse is rhetorical laziness; pretending all is well is a dereliction of perception. What is really underway is a long grammatical transition: the efficiency-first globalization is being rewritten by security and resilience; the one-way narrative of modernization is being corrected by plural civilizational experience; governance once monopolized by states is spilling over to cities, firms, communities and individuals.</p><blockquote><p>\"Order is not discovered; it is narrated and practiced.\"<span class=\"q-src\">— epigraph of the inaugural theme, \"Rewriting Order\"</span></p></blockquote><p>Hence our inaugural theme. The rise of the Global South is rewriting the distribution of power; the return of industrial policy is rewriting the grammar of markets; the restart of civilizational dialogue is rewriting the borders of identity; youth taking seats at negotiating tables is rewriting the temporality of politics. Four stories, one subtext: the world is being retold, and the storytellers are no longer few.</p><h2>III. Youth: Present, Not Pending</h2><p>The most common rhetorical move in public discussion is to treat the young as an object awaiting definition: \"How should youth face a broken world?\" We refuse the sentence. Young people are not the world's heirs — in time, we are its present shareholders. The climate bill is booked in our names; technical rules run through our professions; new political vocabularies are coined in our feeds.</p><p>Our position is therefore: presence. Presence as writers, as researchers, as citizens. The first act of presence is to look carefully — at data without ready conclusions, at opponents without positional reflexes, at ourselves without nostalgic filters. That is what we ask of every manuscript.</p><h2>IV. The Humility and the Ambition of a Journal</h2><p>We know a youth journal cannot change a tariff schedule or stop a war. But the texture of public life is never decided by high politics alone; it accumulates from the quality of classroom debate, the narrative choices of media, the habits of participation in one's community. Writing is itself a form of governance: turning vague resentment into clear questions, translating opposed positions into arguable propositions.</p><p>This is the first editorial, and the beginning of a long commitment. Submit, criticize, bring us what you see — a page in this review is always kept for a serious writer.</p>",
 
 "global-south-order": "<p>In the international news of 2026, one phrase is hard to avoid: the \"Global South.\" It appears in the communiqués of an expanded BRICS, in G20 family photos, and in the vocabulary of crisis diplomacy. A concept once confined to development economics has become one of the most powerful mobilizing symbols in international politics.</p><p>But symbols rise before substance does. To understand what the Global South means, we must first ask a more basic question: where did it come from, and why has it returned now?</p><h2>I. From Geography to Politics: A Concept's Century-Long Journey</h2><p>\"South\" is ancient as a compass point and modern as a political idea. Its political life began with the construction of the \"North–South problem\": at Bandung in 1955, twenty-nine newly independent Asian and African states appeared together as a bloc of non-alignment; in 1977 the Brandt Commission drew a line across the world map, dividing the globe into North and South. From then on, \"South\" meant not latitude but a shorthand for the development gap and a shared historical position.</p><blockquote><p>\"The Chinese delegation came to seek common ground, not to create division.\"<span class=\"q-src\">— Zhou Enlai, Bandung Conference, 1955</span></p></blockquote><p>After the Cold War the concept fell silent: ideological rivalry ended, and the \"end of history\" seemed to cancel the imagination of alternative orders. Its true revival came after 2022 — when most Southern states declined to take sides in the Ukraine crisis, BRICS carried out a historic expansion, and the African Union won a permanent G20 seat. The Global South completed a crucial turn: from the described object to the self-declared subject.</p><h2>II. The Material Bases: Three Awakenings</h2><p>A concept becomes popular because reality pushes it. First, the drift of economic weight: by purchasing-power parity, emerging and developing economies now exceed the advanced economies in global output, and the engine of growth has moved to the old \"South.\" Second, the consolidation of issue coalitions: on climate finance, debt restructuring and food security, Southern states found their agendas closer to each other's than to the North's — what they want is not to change camps but to rewrite rules. Third, the multiplication of platforms: from BRICS to the SCO, from the New Development Bank to regional payment arrangements, the South for the first time holds a parallel menu of options.</p><p>All three point to the same essence: the reassertion of development as a right. The Southern demand is no longer aid and accommodation, but representation, pricing power and rule-making power.</p><h2>III. Limits and Tensions: The South Is Not a Bloc</h2><p>The Global South is not a country, nor even an interest group. Structural competition within, divisions between energy exporters and the least developed on transition issues, and thin intra-South trade and investment networks all remind us: a bracket holding billions can be torn apart by its own contents.</p><p>A deeper tension lies between discourse and capability. As the Global South becomes a flag everyone claims, it risks instrumentalization: is the fight for the flag, or for the substance beneath it? Without real changes in voice within multilateral institutions, in the pricing of key commodities, in cross-border settlement networks, the \"rise of the South\" may remain a family photo.</p><h2>IV. Conclusion: The Politics of Imagination</h2><p>The international order is never only a distribution of power; it is also a competition of narratives. The most important meaning of the Global South lies not in what it has built, but in the imagination it has reopened: the world can have more than one center; rules can be written by more than one hand.</p><p>For young researchers this is precisely the field worth entering. The new order will not be finalized at any single summit; it is being slowly written, negotiation by negotiation, technical standard by technical standard, silent compromise by silent compromise. To observe it, record it, take part in it — that is why this journal was founded, and the agenda this section will keep tracking.</p>",
 
@@ -327,7 +327,7 @@ window.YPRBODIES = {
    ============================================================ */
 
 /* ============================================================
-   《青年政治论坛》中英文切换词典
+   《青年政治评论》中英文切换词典
    机制：文本节点精确匹配 + 正则 + 标题链接按 href 替换。
    范围：全站界面、导航页脚、各页文案、文章标题/摘要/元信息。
    文章正文保留中文（双语学术期刊惯例），英文模式显示提示条。
@@ -441,7 +441,17 @@ window.YPRBODIES = {
     "展览什么、怎样展览、不展览什么——博物馆的每一面展墙，都是国家记忆政治的现场。当记忆成为边界，我们如何讲述共同的过去？":
       "What is exhibited, how, and what is left out — every museum wall is a site of national memory politics. When memory becomes a border, how do we tell a shared past?",
     "数据跨境流动、模型跨境部署、内容跨境审核——当算法全球运行而规则止步国界，空间、时间与能力的三重错位，让治理赤字成为数字时代最严峻的考题。":
-      "Data, models and moderation all cross borders while rules stop at the frontier. Three misalignments — of space, time and capacity — make the governance deficit the hardest test of the digital age."
+      "Data, models and moderation all cross borders while rules stop at the frontier. Three misalignments — of space, time and capacity — make the governance deficit the hardest test of the digital age.",
+    "「损失与损害」基金落地难，气候资金的承诺与兑现之间存在巨大鸿沟。绿色转型的成本如何分担，考验着全球正义的底线。":
+      "The loss-and-damage fund is hard to land, and the gap between climate-finance promises and delivery is vast. Sharing the costs of transition is a test of global justice.",
+    "三十年前，「文明冲突论」预言了断层线战争；三十年后，文明对话重回全球议程。文明的边界究竟是冲突的断层线，还是互鉴的接触面？答案取决于我们如何讲述文明的故事。":
+      "Thirty years after the \"clash of civilizations\" prophesied fault-line wars, dialogue among civilizations is back on the global agenda. The answer depends on how we tell the story of civilizations.",
+    "「民主」「自由」「文明」——这些我们习以为常的概念，都经历了漫长的跨语言旅行。翻译从来不只是语言转换，而是意义的再生产。":
+      "\"Democracy,\" \"freedom,\" \"civilization\" — every familiar concept has taken a long journey across languages. Translation is the reproduction of meaning.",
+    "从《巴黎协定》到 COP30，气候谈判正从技术议程演变为代际公平议题。当决策的时间尺度与后果的时间尺度错位，青年不再满足于被「代表」，而是要求在场。":
+      "From the Paris Agreement to COP30, climate talks are turning from a technical agenda into a question of generational fairness. Youth demand a seat, not representation.",
+    "安理会否决权、会费危机、维和困境——八十岁的联合国站在十字路口。对多边主义而言，改革不是选择，而是生存。":
+      "Vetoes, funding crises, peacekeeping dilemmas — the eighty-year-old UN stands at a crossroads. For multilateralism, reform is survival."
   };
 
   /* ---------- 界面与页面文案表 ---------- */
@@ -450,7 +460,7 @@ window.YPRBODIES = {
     "2026年秋季刊 · 总第1期 · 主题「秩序重构」": "Autumn 2026 · Issue No. 1 · Theme: Rewriting Order",
     "投稿指南": "Submissions",
     "联系我们": "Contact",
-    "青年政治论坛": "Youth Political Review",
+    "青年政治评论": "Youth Political Review",
     "Youth Political Review": "A Bilingual Journal of Global Affairs",
     "首页": "Home",
     "关于我们": "About Us",
@@ -479,7 +489,7 @@ window.YPRBODIES = {
     "您的邮箱地址": "Your email address",
     "订 阅": "Subscribe",
     "感谢订阅！本站为演示模板，正式上线前请接入邮件服务。": "Thank you for subscribing! Connect an email service before going live.",
-    "© 2026 《青年政治论坛》Youth Political Review · 保留所有权利": "© 2026 Youth Political Review. All rights reserved.",
+    "© 2026 《青年政治评论》Youth Political Review · 保留所有权利": "© 2026 Youth Political Review. All rights reserved.",
     "编辑部来信：sduasgg2025920@163.com · 创刊号内容为示例文稿": "Editorial: sduasgg2025920@163.com · Inaugural content is sample material",
     /* 首页 */
     "「全球南方」的兴起：国际秩序重构中的想象与实践": "", // 由 TITLES 处理
@@ -519,7 +529,7 @@ window.YPRBODIES = {
     "全球经济板块 · 撰稿人": "Global Economy Desk · Contributor",
     "全球文明板块 · 撰稿人": "Global Civilization Desk · Contributor",
     "全球治理板块 · 撰稿人": "Global Governance Desk · Contributor",
-    "青年政治论坛 · 编辑部": "Youth Political Review · Editorial Board",
+    "青年政治评论 · 编辑部": "Youth Political Review · Editorial Board",
     "特别策划 · 常设栏目": "Special Feature · Standing Column",
     "国际关系研究者，关注全球南方与国际秩序转型。（示例作者简介，请替换为真实信息）":
       "IR researcher covering the Global South and international order. (Sample bio — replace before launch)",
@@ -559,9 +569,9 @@ window.YPRBODIES = {
       "A standing cross-disciplinary conversation: one contested question, five voices per issue. (Sample description)",
     "本文仅代表作者个人观点，与本刊编辑部立场无关。": "This article represents the author's personal views only and not those of the editorial board.",
     "卷首语代表编辑部立场；其余文章仅代表作者个人观点。": "Editorials represent the board; all other articles represent only their authors.",
-    "本文系《青年政治论坛》创刊号示例文章，用于展示网站版式；正式上线前请替换为真实稿件。":
+    "本文系《青年政治评论》创刊号示例文章，用于展示网站版式；正式上线前请替换为真实稿件。":
       "This is a sample article of the inaugural issue, shown for layout preview; replace with final copy before launch.",
-    "本文系《青年政治论坛》创刊号示例卷首语，用于展示网站版式；正式上线前请替换为编辑部审定稿。":
+    "本文系《青年政治评论》创刊号示例卷首语，用于展示网站版式；正式上线前请替换为编辑部审定稿。":
       "This is a sample editorial of the inaugural issue, shown for layout preview; replace with the board's final copy before launch.",
     /* 首页引文与圆桌引文 */
     "「中国代表团是来求同而不是来立异的。」——周恩来，一九五五年万隆会议发言": "",
@@ -569,7 +579,7 @@ window.YPRBODIES = {
     "「文明死于自杀，而非他杀。」——阿诺德·汤因比，《历史研究》": "",
     /* 关于页 */
     "以青年之眼，观世界之变 —— Youth Political Review": "Seeing the changing world through young eyes — Youth Political Review",
-    "《青年政治论坛》（Youth Political Review）是一份由青年学人主笔的全球事务评论期刊。我们相信：在世界秩序深刻重构的年代，青年不应只是被谈论的对象，更应成为谈论世界的人。":
+    "《青年政治评论》（Youth Political Review）是一份由青年学人主笔的全球事务评论期刊。我们相信：在世界秩序深刻重构的年代，青年不应只是被谈论的对象，更应成为谈论世界的人。":
       "Youth Political Review is a journal of global affairs written by young scholars. We believe that in an era when world order is being rebuilt, young people should not merely be talked about — we should be the ones talking about the world.",
     "本刊设全球政治、全球经济、全球文明、全球治理四大板块，既追踪大国博弈与制度变迁，也关注观念流动与文明对话；既面向国际关系、经济学、历史学与法学的青年研究者，也欢迎一切认真观察世界的年轻人。我们追求的不是预测下一个头条，而是为理解长期趋势提供有学理根基的青年视角。":
       "Across four sections — global politics, economy, civilization and governance — we follow great-power rivalry and institutional change as well as the movement of ideas and dialogue among civilizations. We write for young researchers in IR, economics, history and law, and for anyone who watches the world seriously. We aim not to predict the next headline, but to give theoretically grounded, youthful perspectives on long-term trends.",
@@ -610,7 +620,7 @@ window.YPRBODIES = {
     "来件将在 3 个工作日内回复。": "We reply within three working days.",
     /* 投稿页 */
     "青年之声，论道天下 —— 我们期待你的观察与思考": "Youth voice on world affairs — we look forward to your observations and reflections.",
-    "《青年政治论坛》是一个开放的平台。我们相信，关于世界秩序的讨论里，不应缺少年轻人的声音——不是因为年轻本身值得被听见，而是因为青年视角里藏着未来的问题意识。":
+    "《青年政治评论》是一个开放的平台。我们相信，关于世界秩序的讨论里，不应缺少年轻人的声音——不是因为年轻本身值得被听见，而是因为青年视角里藏着未来的问题意识。":
       "Youth Political Review is an open platform. Discussions of world order should not lack young voices — not because youth deserves to be heard per se, but because young perspectives carry the questions of the future.",
     "无论你是国际关系、经济学、历史学、法学方向的本科生或研究生，是青年从业者、观察者，还是一位认真关心世界的独立写作者：只要你的文章有扎实的依据、清晰的判断和诚实的论证，这里就有它的位置。":
       "Undergraduate or graduate student in IR, economics, history or law; a young practitioner, observer, or an independent writer who cares about the world — if your writing rests on solid evidence, clear judgment and honest argument, it has a place here.",
@@ -725,6 +735,46 @@ window.YPRBODIES = {
       "Confirmation usually within three working days; the initial decision within fourteen; then one or two editing rounds and author sign-off — about four to six weeks in total. Time-sensitive pieces may use the fast track, published in as little as ten working days.",
     "完整稿件、选题提案与投稿咨询，请发送至编辑部：": "Send full drafts, pitches and enquiries to the editorial board:",
     "标题请注明「投稿 + 体裁 + 标题」。": "Mark your subject line: Submission + Genre + Title.",
+    /* 投稿页：被 <strong> 切开的句子按短语补译 */
+    "我们寻找": "We look for ",
+    "观点明确、论证扎实、面向非专业读者": "clear positions, solid argument, and general readers in mind",
+    "的公共写作。请不要直接提交未经改写的课程论文或学位论文；复杂概念应被解释，而不是被术语遮蔽。":
+      " public writing. Please do not submit unrewritten course papers or theses; complex concepts should be explained, not hidden behind jargon.",
+    "我们尤其欢迎": "We especially welcome ",
+    "跨地区、跨学科": "cross-regional, cross-disciplinary",
+    "第一手经验": "first-hand experience",
+    "的稿件。可提交完整稿件，也可先发送两至三句话的选题构想，编辑部讨论后再确认是否成稿。":
+      " from young writers. Send a full draft — or pitch first with two or three sentences; the editors will confirm before you write.",
+    "以及来自青年作者": " and ",
+    "了解编辑部": "About the Board",
+    "返回首页": "Back to Home",
+    /* 页脚：被链接与年份 <span> 切开的句子（注意 trim 后无前导空格） */
+    "编辑部来信：": "Editorial: ",
+    "· 创刊号内容为示例文稿": "· Inaugural content is sample material",
+    "《青年政治评论》Youth Political Review · 保留所有权利": "Youth Political Review. All rights reserved.",
+    "联系方式": "Contact",
+    "2026 · 秋季刊 | 总第 1 期": "2026 · Autumn | No. 1",
+    /* 首页/栏目页头条元行（作者名与「作者」同节点） */
+    "作者 林知遥": "By Lin Zhiyao", "作者 沈亦舟": "By Shen Yizhou",
+    "作者 陆望舒": "By Lu Wangshu", "作者 唐清越": "By Tang Qingyue",
+    /* 栏目页头条摘要（首页头条由专用逻辑处理，此处覆盖栏目页节点） */
+    "从新德里到巴西利亚，从约翰内斯堡到雅加达，「全球南方」正在从地图上的地理方位，变成谈判桌上的政治力量。本文追溯这一概念的百年流变，追问它能否真正塑造一个更多极、更公正的世界秩序。":
+      "From New Delhi to Brasília, the \"Global South\" is turning from a point on the map into a force at the negotiating table. This article traces the concept's century-long journey and asks whether it can truly shape a more multipolar, more just world order.",
+    /* 团队姓名（英文版用拼音） */
+    "白鹿原": "Bai Luyuan", "顾湘南": "Gu Xiangnan",
+    /* 栏目页简介 */
+    "聚焦大国关系、地区安全、政治思潮与制度变迁，追问权力与观念如何塑造世界的政治版图。我们不满足于描述权力的分布，更关心秩序想象的变化。":
+      "Great-power relations, regional security, political thought and institutional change — how power and ideas reshape the political map of the world. We care not only in where power sits, but in how imaginaries of order are changing.",
+    "追踪国际贸易、金融体系、发展与产业政策的互动，理解相互依存时代的财富、权力与选择。经济从来不是纯技术问题——每一张关税清单背后，都是一部政治史。":
+      "Trade, finance, development and industrial policy in interaction — wealth, power and choice in an age of interdependence. Economics is never a purely technical matter; behind every tariff list stands a political history.",
+    "观察思想、宗教、艺术与生活方式的跨文明流动，在「文明对话」的视野中理解他者与自我。文明不是博物馆里的展品，而是持续生长、彼此缠绕的生命体。":
+      "The cross-civilizational movement of ideas, religions, arts and ways of life — understanding others and ourselves through dialogue. Civilizations are not museum exhibits but living things, growing and entangled.",
+    "关注多边机制、全球公共品与气候、数字、健康等新兴议程，探讨人类如何组织共同的未来。在一个没有世界政府的世界里，治理是最艰难也最必要的技艺。":
+      "Multilateral mechanisms, global public goods, and emerging agendas of climate, digital and health — how humanity organizes a common future. In a world without world government, governance is the hardest and most necessary craft.",
+    /* 关于页：被 <strong> 切开的四大板块句子 */
+    "本刊设": "The journal runs four sections — ",
+    "四大板块，既追踪大国博弈与制度变迁，也关注观念流动与文明对话；既面向国际关系、经济学、历史学与法学的青年研究者，也欢迎一切认真观察世界的年轻人。我们追求的不是预测下一个头条，而是为理解长期趋势提供有学理根基的青年视角。":
+      " — global politics, economy, civilization and governance — following great-power rivalry and institutional change as well as the movement of ideas and dialogue among civilizations; written for young researchers in IR, economics, history and law, and for every serious observer. We aim not to predict the next headline, but to offer theoretically grounded, youthful perspectives on long-term trends.",
     "现在开始": "Get Started",
     "把你的第一篇稿件寄给我们：": "Send us your first manuscript:",
     "标题请注明「投稿 + 板块 + 标题」。": "Mark your subject line: Submission + Section + Title."
@@ -737,6 +787,7 @@ window.YPRBODIES = {
     [/^\s*主持\s*$/, "Moderated by "],
     [/约\s*(\d+)\s*分钟阅读/, "$1 min read"],
     [/约\s*(\d+)\s*分钟/, "$1 min"],
+    [/(\d+)\s*分钟/, "$1 min"],
     [/(\d{4})年(\d{1,2})月(\d{1,2})日/, function (m, y, mo, d) { return MONTHS[mo - 1] + " " + (+d) + ", " + y; }],
     [/(\d{1,2})月(\d{1,2})日/, function (m, mo, d) { return MONTHS[mo - 1] + " " + (+d); }]
   ];
@@ -755,11 +806,18 @@ window.YPRBODIES = {
   nodes.forEach(function (node) {
     var raw = node.nodeValue, t = raw.trim();
     if (T[t] !== undefined && T[t] !== "") { node.nodeValue = T[t]; return; }
+    if (X[t] !== undefined && X[t] !== "") { node.nodeValue = X[t]; return; }
     var out = raw;
     RX.forEach(function (pair) {
       out = out.replace(pair[0], pair[1]);
     });
     node.nodeValue = out;
+  });
+
+  /* 占位符属性翻译 */
+  document.querySelectorAll("input[placeholder]").forEach(function (i) {
+    var v = i.getAttribute("placeholder");
+    if (T[v] !== undefined && T[v] !== "") i.setAttribute("placeholder", T[v]);
   });
 
   /* 文章标题链接按 href 统一替换（卡片、目录、相关阅读） */
@@ -832,7 +890,7 @@ window.YPRBODIES = {
    ============================================================ */
 
 /* ============================================================
-   《青年政治论坛》站内搜索
+   《青年政治评论》站内搜索
    零依赖纯前端：内置全站索引（18 篇文章 + 7 个页面），
    Ctrl+K / 头部按钮唤起，即时过滤、关键词高亮、键盘导航。
    中文/英文标题均可检索，展示语言跟随站点语言设置。

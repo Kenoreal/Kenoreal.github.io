@@ -1,5 +1,5 @@
 /* ==========================================================================
-   《青年政治论坛》Youth Political Review — 全站样式
+   《青年政治评论》Youth Political Review — 全站样式
    设计基调：学术杂志风（参考 Oxford Political Review）
    白底 + 牛津蓝 + 学术绯红，衬线大标题，板块专属色
    ========================================================================== */
@@ -756,6 +756,12 @@ html[lang="en"] .latest-row .l-title { font-family: Georgia, "Times New Roman", 
 html[lang="en"] .section-band .en-name { display: none; }  /* 英文模式下标题已是英文，避免重复 */
 html[lang="en"] .genre-card .g-en { display: none; }
 html[lang="en"] .meta { letter-spacing: .01em; }
+
+/* 英文版：刊名单行显示 */
+html[lang="en"] .brand-word br { display: none; }
+html[lang="en"] .brand-en { display: none; }
+html[lang="en"] .brand-cn { white-space: nowrap; font-size: 17px; letter-spacing: .02em; font-family: Georgia, "Times New Roman", "Noto Serif SC", serif; font-weight: 700; }
+html[lang="en"] .footer-brand .brand-cn { font-size: 15.5px; }
 
 /* ==========================================================================
    动效 & 响应式

@@ -1,4 +1,4 @@
-# 《青年政治论坛》Youth Political Review — 官方网站
+# 《青年政治评论》Youth Political Review — 官方网站
 
 一份由青年学人主笔的全球事务评论期刊网站，设计参考《牛津政治评论》（Oxford Political Review）的杂志式布局，以中文为主、中英双语标识。
 
